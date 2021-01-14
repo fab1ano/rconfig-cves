@@ -21,6 +21,8 @@ RUN /etc/init.d/mysql start && mysql -u root -e "UPDATE mysql.user SET plugin = 
 
 # TODO: do install setup
 
+EXPOSE 8080:8080
+
 # TODO: overwrite config to disable https forwarding
 
 ENTRYPOINT /entrypoint.sh
