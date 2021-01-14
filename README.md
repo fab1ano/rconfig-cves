@@ -29,3 +29,9 @@ docker build . -t fab1ano/cve-2019-1666[2,3]
 docker push fab1ano/cve-2019-1666[2,3]
 popd
 ```
+
+## Launch
+
+```
+docker run -it fab1ano/cve-2019-1666[2,3]
+```
