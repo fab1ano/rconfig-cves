@@ -12,13 +12,16 @@ For further info have a look at the corresponding [blog post](https://www.sudoka
 
 ## Run
 
-Also, you can just pull the image from docker hub:
+You can just pull the image from docker hub:
 
 ```
 docker run -it fab1ano/cve-2019-1666[2,3]
 ```
 
 ## Setup
+
+This section only contains the required procedure to create the docker images.
+If you want to build them on your own, replace my handle (`fab1ano`) with yours.
 
 ```
 docker build . -t fab1ano/rconfig-base
