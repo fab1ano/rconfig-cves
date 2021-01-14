@@ -8,7 +8,15 @@ Demo images for CVE-2019-16662 and CVE-2019-16663.
 This repository contains the setup to create two docker images running rConfig 3.9.2.
 Each image contains an `/exploit.py` to trigger the vulnerability.
 
-For further info have a look at [this](https://www.sudokaikan.com/2019/11/cve-2019-16662-cve-2019-16663.html) blog post.
+For further info have a look at the corresponding [blog post](https://www.sudokaikan.com/2019/11/cve-2019-16662-cve-2019-16663.html).
+
+## Run
+
+Also, you can just pull the image from docker hub:
+
+```
+docker run -it fab1ano/cve-2019-1666[2,3]
+```
 
 ## Setup
 
@@ -28,18 +36,10 @@ docker push fab1ano/rconfig-base
 ```
 
 Then, build the two cve images.
-Run the following for each subdirectory:
+Run the following commands for each subdirectory:
 
 ```
 cd cve-2019-1666[2,3]
 docker build . -t fab1ano/cve-2019-1666[2,3]
 docker push fab1ano/cve-2019-1666[2,3]
-```
-
-## Launch
-
-Also, you can just pull the image from docker hub:
-
-```
-docker run -it fab1ano/cve-2019-1666[2,3]
 ```
